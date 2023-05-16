@@ -1,0 +1,64 @@
+*{
+    border: 1px solid;
+}
+
+/*outline of dashboard*/
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 4fr;  
+    grid-template-rows: 1fr 4fr;
+}
+
+.dashboard{
+    background-color: blue;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    
+}
+
+.header{
+    background-color: green;
+    grid-column: 2/3;
+}
+
+.sidebar{
+    background-color: red;
+    grid-row: 1/3;
+}
+
+/*Dashboard boxes*/
+
+.projects{
+    background-color: white;
+    display: grid;
+    grid-template-rows: 1fr 10fr;
+    grid-row: 1/3;
+    grid-gap: 5px;
+    margin: 10px;
+}
+
+.proj-boxes{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 5px;
+    background-color: cyan;
+}
+
+.templates{
+    background-color: white;
+    margin:10px 10px 10px 0px ;
+    display: grid;
+    grid-template-rows: 60px 1fr;
+}
+
+
+.announcements{
+    background-color: white;
+    margin:0px 10px 10px 0px ;
+    display: grid;
+    grid-template-rows: 60px 1fr;
+}
